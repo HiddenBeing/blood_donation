@@ -6,7 +6,7 @@ wave.classList.add("active");
 
 setTimeout(()=>{
 
-window.location.href="video.html";
+window.location.href="html/video.html";
 
 },1200);
 
