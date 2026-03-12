@@ -1,0 +1,94 @@
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Camp</title>
+    <link rel="stylesheet" href="../css/blood.css">
+</head>
+<div id="dashboard">
+
+<div class="stats">
+    <div class="card">
+        <h2>Donors</h2>
+        <span id="donors">0</span>
+    </div>
+
+    <div class="card">
+        <h2>Lives Saved</h2>
+        <span id="lives">0</span>
+    </div>
+</div>
+
+
+<div class="main-system">
+
+<div class="left-types">
+
+<div class="blood-row">
+<button class="minus-btn" onclick="removeBlood('A+')">−</button>
+<span id="Aplus">0</span>
+<button onclick="addBlood('A+', event)">A+</button>
+</div>
+
+<div class="blood-row">
+<button class="minus-btn" onclick="removeBlood('B+')">−</button>
+<span id="Bplus">0</span>
+<button onclick="addBlood('B+', event)">B+</button>
+</div>
+
+<div class="blood-row">
+<button class="minus-btn" onclick="removeBlood('AB+')">−</button>
+<span id="ABplus">0</span>
+<button onclick="addBlood('AB+', event)">AB+</button>
+</div>
+
+<div class="blood-row">
+<button class="minus-btn" onclick="removeBlood('O+')">−</button>
+<span id="Oplus">0</span>
+<button onclick="addBlood('O+', event)">O+</button>
+</div>
+
+</div>
+
+
+<div class="blood-container">
+<div class="tube"></div>
+
+<div class="bag">
+<div class="blood" id="blood">
+<div class="wave"></div>
+</div>
+</div>
+</div>
+
+<div class="right-types">
+
+<div class="blood-row">
+<button onclick="addBlood('A-', event)">A-</button>
+<span id="Aminus">0</span>
+<button class="minus-btn" onclick="removeBlood('A-')">−</button>
+</div>
+
+<div class="blood-row">
+<button onclick="addBlood('B-', event)">B-</button>
+<span id="Bminus">0</span>
+<button class="minus-btn" onclick="removeBlood('B-')">−</button>
+</div>
+
+<div class="blood-row">
+<button onclick="addBlood('AB-', event)">AB-</button>
+<span id="ABminus">0</span>
+<button class="minus-btn" onclick="removeBlood('AB-')">−</button>
+</div>
+
+<div class="blood-row">
+<button onclick="addBlood('O-', event)">O-</button>
+<span id="Ominus">0</span>
+<button class="minus-btn" onclick="removeBlood('O-')">−</button>
+</div>
+
+</div>
+
+</div>
+
+
+<script src="../js/blood.js"></script>
